@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins',sans-serif;
+}
+/* logo-and-toggle-section */
+.bigman {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px;
+    background: #111;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 2;
+}
+.toggle{
+    position: relative;
+    background: url(./icons/list.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 30px;
+    width: 60px;
+    height: 60px;
+    filter: invert(1);
+    cursor: pointer;
+}
+.bigman header{
+    position: absolute;
+    padding: 40px 100px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 2;
+}
+header h2{
+    text-transform: uppercase;
+    cursor: pointer;
+}
+/* video-and-overlay-section */
+.bigman video{
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.8;
+}
+.overlay{
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background: rgba(0, 0, 0, 0.3);
+    mix-blend-mode: overlay;
+}
+/* text-section */
+.text{
+    position: relative;
+    z-index: 5;
+}
+.text{
+    line-height: 1;
+}
+.text h2{
+    position: relative;
+    text-transform: uppercase;
+    font-size: 4em;
+    font-weight: 800
+}
+.text h3{
+    position: relative;
+    text-transform: uppercase;
+    font-size: 3.5em;
+    font-weight: 700;  
+}
+.text p{
+    margin: 50px 0px;
+    position: relative;
+    font-size: 1em;
+    font-weight: 200;
+    max-width: 60%; 
+}
+.text a{
+    padding: 10px 20px;
+    background: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #111;
+    transition: 300ms;
+}
+.text a:hover{
+    letter-spacing: 0.4em;
+    color: rgb(225, 121, 161);
+}
+
+/* socials-section */
+.socials{
+    position: absolute;
+    bottom: 20px;
+    display: flex;
+    filter: invert(1);
+}
+.socials li{
+    margin: 0px 20px;
+    list-style: none;
+    transform: scale(1.5);
+    transition: 400ms;
+}
+.socials li:hover{
+    transform: scale(2);
+}
